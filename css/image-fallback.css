@@ -1,0 +1,42 @@
+/* Placeholder for missing images */
+img {
+    background-color: #f8f9fa;
+    border: 2px dashed #dee2e6;
+    display: inline-block;
+    position: relative;
+}
+
+img::before {
+    content: "Image: " attr(alt);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6c757d;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+img::after {
+    content: "📷";
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #6c757d;
+}
+
+/* Hide placeholder content when image loads */
+img:not([src=""]):not([src*="placeholder"]) {
+    background: none;
+    border: none;
+}
+
+img:not([src=""]):not([src*="placeholder"])::before,
+img:not([src=""]):not([src*="placeholder"])::after {
+    display: none;
+}

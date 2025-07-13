@@ -1,0 +1,33 @@
+{
+  "name": "medease-physiotherapy",
+  "version": "1.0.0",
+  "description": "Complete clone of MedEase Physiotherapy website",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static site'",
+    "deploy": "echo 'Deploy to GitHub Pages - see DEPLOYMENT.md'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/medease-physiotherapy.git"
+  },
+  "keywords": [
+    "physiotherapy",
+    "medical",
+    "healthcare",
+    "website",
+    "clone",
+    "responsive",
+    "html",
+    "css",
+    "javascript"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/medease-physiotherapy/issues"
+  },
+  "homepage": "https://yourusername.github.io/medease-physiotherapy"
+}
