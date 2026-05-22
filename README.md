@@ -17,11 +17,11 @@
 
 ### Individual Service Pages
 - **Orthopedic Rehabilitation** (`services/orthopedic-rehabilitation.html`)
-- **Cardiopulmonary Rehabilitation** (`services/cardiopulmonary-rehabilitation.html`)
+- **Cardiac Rehabilitation** (`services/cardiopulmonary-rehabilitation.html`)
 - **Post-Surgical Recovery** (`services/post-surgical-recovery.html`)
 - **Vestibular Rehabilitation** (`services/vestibular-rehabilitation.html`)
 - **Cancer Rehabilitation** (`services/cancer-rehabilitation.html`)
-- **Chronic Disease Management** (`services/chronic-disease-management.html`)
+- **Lifestyle Diseases** (`services/chronic-disease-management.html`)
 
 ### Team Detail Page
 - **Dr. Nishtha Singhal** (`team/dr-nishtha-singhal.html`) - Detailed profile of the therapist
@@ -97,19 +97,19 @@ medease/
 ## Services Offered
 
 1. **Orthopedic Rehabilitation** - Recovery from musculoskeletal injuries and surgeries
-2. **Cardiopulmonary Rehabilitation** - Heart and lung condition recovery programs
+2. **Cardiac Rehabilitation** - Heart and lung condition recovery programs
 3. **Post-Surgical Recovery** - Comprehensive post-operative rehabilitation
 4. **Vestibular Rehabilitation** - Treatment for dizziness, vertigo, and balance issues
 5. **Cancer Rehabilitation** - Holistic care for cancer survivors
-6. **Chronic Disease Management** - Long-term health condition management
+6. **Lifestyle Diseases** - Long-term health condition management
 
 ## About Dr. Nishtha Singhal
 
 Dr. Nishtha Singhal holds a Master's Degree in cardiopulmonary physiotherapy and is committed to delivering exceptional care. She specializes in:
 
-- Cardiopulmonary rehabilitation
+- Cardiac Rehabilitation
 - Post-surgical recovery
-- Chronic disease management
+- Lifestyle Diseases
 - Home visits across Mumbai
 - Online consultations
 
