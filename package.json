@@ -1,7 +1,7 @@
 {
   "name": "medease-physiotherapy",
   "version": "1.0.0",
-  "description": "Complete clone of MedEase Physiotherapy website",
+  "description": "Complete clone of MedEase Physio And Rehab website",
   "main": "index.html",
   "scripts": {
     "start": "python -m http.server 8000",

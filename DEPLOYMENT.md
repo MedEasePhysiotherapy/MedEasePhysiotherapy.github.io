@@ -1,6 +1,6 @@
 # GitHub Pages Deployment Guide
 
-Follow these steps to deploy your MedEase Physiotherapy website to GitHub Pages:
+Follow these steps to deploy your MedEase Physio And Rehab website to GitHub Pages:
 
 ## Step 1: Create a GitHub Repository
 
@@ -121,4 +121,4 @@ If you encounter issues:
 3. Ensure all file paths are correct
 4. Test the website locally first
 
-Your MedEase Physiotherapy website should now be live and accessible to the world!
+Your MedEase Physio And Rehab website should now be live and accessible to the world!

@@ -134,7 +134,7 @@ This website is designed to be hosted on GitHub Pages or any static hosting serv
 
 ## License
 
-This project is created as a clone of the original MedEase Physiotherapy website for educational/portfolio purposes.
+This project is created as a clone of the original MedEase Physio And Rehab website for educational/portfolio purposes.
 
 ## Credits
 
