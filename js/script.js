@@ -138,6 +138,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Clinic timings: highlight today's row and show open/closed status (IST)
+document.addEventListener('DOMContentLoaded', function() {
+    const schedule = document.querySelector('.visit-schedule');
+    const status = document.getElementById('visitStatus');
+    if (!schedule || !status) return;
+
+    const OPEN_MINUTES = 17 * 60;   // 5:00 PM
+    const CLOSE_MINUTES = 21 * 60;  // 9:00 PM
+
+    const parts = new Intl.DateTimeFormat('en-US', {
+        timeZone: 'Asia/Kolkata',
+        weekday: 'short',
+        hour: 'numeric',
+        minute: 'numeric',
+        hourCycle: 'h23'
+    }).formatToParts(new Date());
+
+    const weekdayMap = { Sun: 0, Mon: 1, Tue: 2, Wed: 3, Thu: 4, Fri: 5, Sat: 6 };
+    const weekday = weekdayMap[parts.find(p => p.type === 'weekday').value];
+    const minutes = parseInt(parts.find(p => p.type === 'hour').value, 10) * 60 +
+                    parseInt(parts.find(p => p.type === 'minute').value, 10);
+
+    const todayRow = schedule.querySelector(`li[data-day="${weekday}"]`);
+    if (todayRow) todayRow.classList.add('is-today');
+
+    const isOpen = weekday !== 0 && minutes >= OPEN_MINUTES && minutes < CLOSE_MINUTES;
+    status.textContent = isOpen ? 'Open now' : 'Closed now';
+    status.classList.add(isOpen ? 'is-open' : 'is-closed');
+});
+
 // Phone number formatting
 function formatPhoneNumber(input) {
     const phoneNumber = input.value.replace(/\D/g, '');
