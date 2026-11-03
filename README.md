@@ -89,7 +89,7 @@ medease/
 
 ## Contact Information
 
-- **Phone**: +91 7022791045
+- **Phone**: +91 9769620514
 - **Email**: nsinghal016@gmail.com
 - **WhatsApp**: Direct link to WhatsApp chat
 - **Location**: Mumbai, India
