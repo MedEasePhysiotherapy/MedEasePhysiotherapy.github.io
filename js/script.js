@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const encodedMessage = encodeURIComponent(whatsappMessage);
             
             // Open WhatsApp
-            window.open(`https://wa.me/+917022791045?text=${encodedMessage}`, '_blank');
+            window.open(`https://wa.me/+919769620514?text=${encodedMessage}`, '_blank');
             
             // Show success message
             alert('Thank you for your message! You will be redirected to WhatsApp to send your inquiry.');
