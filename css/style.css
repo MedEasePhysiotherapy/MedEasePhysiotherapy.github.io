@@ -417,6 +417,67 @@ img {
     margin-bottom: 30px;
 }
 
+/* Therapist Bio (structured profile on home page) */
+.therapist-bio {
+    color: #666;
+    line-height: 1.6;
+}
+
+.therapist-bio-intro {
+    margin-bottom: 24px;
+}
+
+.therapist-bio-block {
+    background: #f8f9fa;
+    border-left: 4px solid #007bff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-bottom: 16px;
+}
+
+.therapist-bio-block h4 {
+    font-size: 1.05rem;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.therapist-bio-block ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.therapist-bio-block li {
+    position: relative;
+    padding-left: 18px;
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+.therapist-bio-block li:last-child {
+    margin-bottom: 0;
+}
+
+.therapist-bio-block li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #007bff;
+}
+
+.therapist-bio-block strong {
+    color: #333;
+}
+
+.therapist-bio-closing {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
 /* About Section */
 .about-section {
     padding: 80px 0;
