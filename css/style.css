@@ -384,11 +384,17 @@ img {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 40px;
-    align-items: center;
+    align-items: start;
     background: white;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 40px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    border-top: 5px solid #007bff;
+    transition: box-shadow 0.3s ease;
+}
+
+.therapist-card:hover {
+    box-shadow: 0 16px 40px rgba(0,123,255,0.15);
 }
 
 .therapist-image {
@@ -396,6 +402,7 @@ img {
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,123,255,0.25);
 }
 
 .therapist-content h3 {
@@ -418,64 +425,130 @@ img {
 }
 
 /* Therapist Bio (structured profile on home page) */
+.therapist-content .therapist-title {
+    display: inline-block;
+    background: #e7f1ff;
+    color: #0056b3;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    margin-bottom: 20px;
+}
+
 .therapist-bio {
-    color: #666;
-    line-height: 1.6;
+    color: #444;
+    line-height: 1.7;
+    text-align: left;
 }
 
 .therapist-bio-intro {
+    font-size: 1.05rem;
+    color: #444;
     margin-bottom: 24px;
 }
 
 .therapist-bio-block {
-    background: #f8f9fa;
-    border-left: 4px solid #007bff;
-    border-radius: 10px;
-    padding: 16px 20px;
+    background: #fff;
+    border: 1px solid #e3ecf7;
+    border-radius: 12px;
+    padding: 18px 20px;
     margin-bottom: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.therapist-bio-block:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.therapist-bio-block.bio-block--wide {
+    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
 }
 
 .therapist-bio-block h4 {
-    font-size: 1.05rem;
-    color: #333;
-    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #0056b3;
+    margin: 0 0 12px;
+}
+
+.bio-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e7f1ff;
+    font-size: 0.95rem;
+    text-transform: none;
+    flex-shrink: 0;
 }
 
 .therapist-bio-block ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .therapist-bio-block li {
-    position: relative;
-    padding-left: 18px;
-    margin-bottom: 6px;
-    font-size: 0.95rem;
+    margin: 0;
+    font-size: 0.92rem;
 }
 
-.therapist-bio-block li:last-child {
-    margin-bottom: 0;
-}
-
-.therapist-bio-block li::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.6em;
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: #007bff;
+/* Chips for hospitals / expertise */
+.therapist-bio-block ul:has(strong) li {
+    background: #e7f1ff;
+    color: #0056b3;
+    padding: 6px 14px;
+    border-radius: 999px;
 }
 
 .therapist-bio-block strong {
-    color: #333;
+    color: #0b3d75;
+    font-weight: 600;
+}
+
+/* Clinical Practice: checkmark list instead of chips */
+.therapist-bio-block ul:not(:has(strong)) {
+    display: block;
+}
+
+.therapist-bio-block ul:not(:has(strong)) li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 8px;
+}
+
+.therapist-bio-block ul:not(:has(strong)) li:last-child {
+    margin-bottom: 0;
+}
+
+.therapist-bio-block ul:not(:has(strong)) li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #007bff;
+    font-weight: 700;
 }
 
 .therapist-bio-closing {
+    position: relative;
     font-style: italic;
-    margin-bottom: 0;
+    color: #0b3d75;
+    background: linear-gradient(90deg, #e7f1ff 0%, #f8fbff 100%);
+    border-left: 4px solid #007bff;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin: 8px 0 0;
 }
 
 /* About Section */
@@ -972,6 +1045,18 @@ img {
 
     .visit-map iframe {
         min-height: 260px;
+    }
+
+    .therapist-card {
+        padding: 24px;
+    }
+
+    .therapist-bio {
+        text-align: left;
+    }
+
+    .therapist-bio-block {
+        padding: 16px;
     }
 }
 
