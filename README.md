@@ -41,9 +41,9 @@ medease/
 ├── images/
 │   ├── logo.jpg
 │   ├── hero-image.jpg
-│   ├── dr-nishtha.jpg
+│   ├── dr-nishtha.webp
 │   ├── orthopedic-rehab.jpg
-│   ├── cardiopulmonary-rehab.jpg
+│   ├── cardiopulmonary-rehab.webp
 │   ├── post-surgical-recovery.jpg
 │   └── home-visits.png
 ├── services/
