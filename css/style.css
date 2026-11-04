@@ -64,6 +64,13 @@ img {
     gap: 12px;
     text-decoration: none;
     color: inherit;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.nav-brand:focus {
+    outline: none;
 }
 
 .logo {
