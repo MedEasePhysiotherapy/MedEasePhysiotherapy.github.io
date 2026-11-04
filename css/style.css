@@ -393,16 +393,16 @@ img {
     transition: box-shadow 0.3s ease;
 }
 
-.therapist-card:hover {
+/* .therapist-card:hover {
     box-shadow: 0 16px 40px rgba(0,123,255,0.15);
-}
+} */
 
 .therapist-image {
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 15px;
-    box-shadow: 0 8px 24px rgba(0,123,255,0.25);
+    /* box-shadow: 0 8px 24px rgba(0,123,255,0.25); */
 }
 
 .therapist-content h3 {
@@ -1271,6 +1271,20 @@ img {
 
     .hero-cta {
         padding: 20px;
+    }
+    
+    /* Reuse Featured Services hover animation on other parent cards */
+    .hero-cta,
+    .feature-card,
+    .therapist-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .hero-cta:hover,
+    .feature-card:hover,
+    .therapist-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
     }
 
     .service-hero-content {
