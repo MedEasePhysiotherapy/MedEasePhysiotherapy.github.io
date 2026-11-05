@@ -180,7 +180,7 @@ img {
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
-.hero-cta h3 {
+.hero-cta h2 {
     font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
@@ -478,10 +478,6 @@ img {
 .therapist-bio-block:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.06);
-}
-
-.therapist-bio-block.bio-block--wide {
-    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
 }
 
 .therapist-bio-block h4 {

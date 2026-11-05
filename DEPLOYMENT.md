@@ -50,9 +50,9 @@ git push origin main
 3. The images should be:
    - `logo.jpg` - MedEase logo
    - `hero-image.jpg` - Main hero image
-   - `dr-nishtha.jpg` - Doctor's photo
+   - `dr-nishtha.webp` - Doctor's photo
    - `orthopedic-rehab.jpg` - Orthopedic service image
-   - `cardiopulmonary-rehab.jpg` - Cardiopulmonary service image
+   - `cardiopulmonary-rehab.webp` - Cardiopulmonary service image
    - `post-surgical-recovery.jpg` - Post-surgical service image
    - `home-visits.png` - Home visits image
 
