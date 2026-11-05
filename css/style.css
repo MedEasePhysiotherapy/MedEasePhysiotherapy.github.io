@@ -480,10 +480,6 @@ img {
     box-shadow: 0 6px 16px rgba(0,0,0,0.06);
 }
 
-.therapist-bio-block.bio-block--wide {
-    background: linear-gradient(135deg, #f5f9ff 0%, #ffffff 100%);
-}
-
 .therapist-bio-block h4 {
     display: flex;
     align-items: center;
