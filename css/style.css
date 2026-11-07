@@ -939,6 +939,17 @@ img {
     border-radius: 15px;
 }
 
+.required-note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.required-note span {
+    color: red;
+    font-weight: 600;
+}
+
 /* Clinic Visit Block (contact page) */
 .visit-block {
     display: grid;

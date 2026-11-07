@@ -115,15 +115,16 @@
                 <div class="contact-form-container">
                     <form class="contact-form" id="contactForm">
                         <div class="form-row">
-                            <input type="text" name="firstName" placeholder="First name" required>
-                            <input type="text" name="lastName" placeholder="Last name" required>
+                            <input type="text" name="firstName" placeholder="First name *" required>
+                            <input type="text" name="lastName" placeholder="Last name (optional)">
                         </div>
                         <div class="form-row">
-                            <input type="tel" name="phone" placeholder="Phone" required>
-                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="phone" placeholder="Phone *" required>
+                            <input type="email" name="email" placeholder="Email (optional)">
                         </div>
-                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Message *" rows="5" required></textarea>
                         <button type="submit" class="submit-btn">Submit</button>
+                        <p class="required-note"><span>*</span> Required fields</p>
                     </form>
                 </div>
             </div>
